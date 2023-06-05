@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Budget -->
+        <div class="total-amount-container">
+            <h1>Budget</h1>
+            <input type="text" id="total-amount" placeholder="Enter Total Amount">
+            <button class="submit" id="total-amount-button" onclick="def_limit();">Set Budget</button>
+        </div>
+
+        <!-- Expenditure -->
+        <div class="user-amount-container">
+            <h1 id="exp">Expenses</h1>
+            <form action="#" id="form">
+                <label for="due-date">Due date:
+                    <input type="date" id="due-date">
+                </label>
+                <label for="total-amount">Total Amount:
+                    <input type="text" id="total-val" placeholder="$">
+                </label>
+                <label for="category">Category:
+                    <select id="category">
+                        <option value="movie">Movie</option>
+                        <option value="food">Food</option>
+                        <option value="grocery">Grocery</option>
+                    </select>
+                </label>
+                <label for="description">Description:
+                    <input type="text" id="description">
+                </label>
+                <label for="payment-date">Payment Date:
+                    <input type="date" id="payment-date">
+                </label>
+                <button  id="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="expense-list" id="expense-list">
+        <h1 id="list">Expense List</h1>
+        <p>
+            <span>Total budget</span>
+            <span>Expense</span>
+            <span>Balance</span>
+        </p>
+        <p>
+            <span id="bud"> 00</span>
+            <span id="expense">00</span>
+            <span id="bal">00</span>
+        </p>
+        
+        <!-- <p class="List_generation1"><img class="pic" src="./pictures/icons8-grocery-48.png" alt=""><span class="spend_item">hello world</span> <span class="date">20/20/2020</span> <span class="spend">200</span> <img  class="delete_pic" src="./pictures/icons8-delete-64.png" alt=""></p> -->
+        <!-- <p class="List_generation1">test</p>
+        <p class="List_generation1">test</p>
+        <p class="List_generation1">test</p> -->
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
